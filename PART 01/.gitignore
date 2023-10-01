@@ -1,5 +1,5 @@
 # output
-reports/
+**/reports/*
 files/
 
 # IDE preferences
