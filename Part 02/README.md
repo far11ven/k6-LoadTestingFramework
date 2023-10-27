@@ -13,9 +13,9 @@ https://k6.io/docs/get-started/installation/
 2. Run using following command
 
 ``` 
- k6 run --vus 10 --iterations 20 --out json=report.json code/scripts/test.js
+ k6 run --vus 10 --iterations 20 -e configFile=DEV.json --out json=report.json code/scripts/test.js
 
- k6 run --vus 10 --duration 20s --out csv=report.csv code/scripts/test.js
+ k6 run --vus 10 --duration 20s -e configFile=QA.json --out csv=report.csv code/scripts/test.js
 ```
 
 Skipping setup/teardown execution:
@@ -25,11 +25,11 @@ Skipping setup/teardown execution:
 
 Run locally with a config file, save result on cloud
 
-``` k6 run --no-setup --vus 10 --iterations 10 -o cloud code/scripts/test.js ``` 
+``` k6 run --no-setup --vus 10 --iterations 10 -e configFile=DEV.json -o cloud code/scripts/test.js ``` 
 
 Run on cloud
 
-``` k6 cloud --no-setup --vus 10 --iterations 10 code/scripts/test.js ``` 
+``` k6 cloud --no-setup --vus 10 --iterations 10 -e configFile=DEV.json code/scripts/test.js ``` 
 
 where,
 ``` 
