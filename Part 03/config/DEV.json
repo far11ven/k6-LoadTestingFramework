@@ -1,0 +1,14 @@
+{
+	"baseUrl": "https://httpbin.test.k6.io",
+	"sleepDuration": 1,
+	"pollingRetries" : 20,
+	"user_info": {
+	    "email": "user1_dev@example.com",
+	    "password": "Qatemp@123"
+	},
+	"fileList":[
+		"Invoice-1.pdf",
+		"Invoice-2.pdf",
+		"Invoice-3.pdf"
+	]
+}
