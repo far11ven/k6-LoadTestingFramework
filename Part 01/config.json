@@ -1,0 +1,16 @@
+{
+	"baseUrl": "https://www.saucedemo.com",
+	"userType": "standard",
+	"sleepDuration": 1,
+	"users": [{
+			"type": "standard",
+			"email": "standard_user",
+			"password": "Qatemp@123"
+		},
+		{
+			"type": "problem",
+			"email": "problem_user",
+			"password": "secret_sauce"
+		}
+	]
+}

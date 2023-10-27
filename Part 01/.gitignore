@@ -1,0 +1,11 @@
+# output
+**/reports/*
+files/
+
+# IDE preferences
+/.idea/
+/.vscode/
+
+# dependencies
+/node_modules
+/package-lock.json
